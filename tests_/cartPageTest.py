@@ -1,4 +1,6 @@
 import time
+import unittest
+
 from tests_.basetest_.baseTest import BaseTest
 from pages_.logIn_.logInPage import LogInTest
 from pages_.naviganBar_.navigationBar import NavigationBar
@@ -37,3 +39,6 @@ class CartPageTest(BaseTest):
 
         # Assertion
         self.assertEqual(cartPageObj.get_cart_empty_confirmation_text(), "Your Amazon Cart is empty.")
+
+if __name__ == "__main__":
+    unittest.main
